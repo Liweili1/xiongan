@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.login{
+	width: 10rem;
+	height: .5rem;
+	font-size: .5rem;
+	color: #262626;
+	text-align: center;
+	line-height: .5rem;
+	margin-top: .3rem;
+}
+.loginHeader{
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.loginTitle{
+	width: 3rem;
+	height: 1rem;
+	font-size: .7rem;
+	font-weight: 900;
+	color: #b22329;
+	margin-bottom: 1.2rem;
+}
+.grjy{
+	width: 9rem;
+	height: 1.6rem;
+	background-image: url(../img/grjy.png);
+	background-size: 100% 100%;
+}
+/*正确输入身份证/手机号*/
+.loginList{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+/*.baocuo{
+	width: 10rem;
+	height: .5rem;
+	font-size: .3rem;
+	color: #b22329;
+	position: absolute;
+	top: 0rem;
+	left: .5rem;
+}*/
+.true1,.true2,
+.false1,.false2{
+	width: .6rem;
+	height: .5rem;
+	background-size: 100% 100%;
+	position: absolute;
+	right: .7rem;
+}
+.true1,.true2{
+	background-image: url(../img/true.png);
+}
+.false1,.false2{
+	background-image: url(../img/false.png);
+}
+.true1,
+.false1{
+	top: .6rem;
+}
+.true2,
+.false2{
+	top: 1.9rem;
+}
+#sfz,
+#sjh{
+	width: 9rem;
+	height: 1rem;
+	background-color: #f7f7f7;
+	border-radius: .01rem;
+	border: .02rem solid #b5b5b5;
+	text-indent: .2rem;
+	margin-top: .3rem;
+	outline:none;
+}
+.btn{
+	width: 9rem;
+	height: 1rem;
+	background-color: #b22329;
+	border-radius: .1rem;
+	font-size: .4rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1rem;
+	margin-top: .3rem;
+}
+
+.xieyi{
+	width: 9rem;
+	height: .8rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: .2rem;
+}
+.xieyi .select{
+	width: .5rem;
+	height: .5rem;
+	border: .05rem solid #b5b5b5;
+	border-radius: .5rem;
+	/*background-color: #b22329;*/
+	margin-right: .2rem;
+}
+.xieyi .tyXieyi{
+	width: 5rem;
+	font-size: .35rem;
+	line-height: .5rem;
+	color: #b22329;
+}

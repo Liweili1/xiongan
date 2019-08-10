@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/lcRem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--顶部导航栏-->
+		<!--<div class="topImg"></div>-->
+		<div class="login">登录</div>
+		<div class="loginHeader">
+			<div class="loginTitle">工友之家</div>
+			<div class="grjy"></div>
+		</div>
+		<div class="loginList">
+			<!--<div class="baocuo">
+				<span>身份证或手机号格式错误</span>
+			</div>-->
+			<div class="true1"></div>
+			<div class="true2"></div>
+			
+			<input type="text" name="sfz" id="sfz" value="" placeholder="请输入身份证号" />
+			<input type="text" name="sjh" id="sjh" value="" placeholder="请输入手机号" />
+			<a href="我的.html" style="text-decoration: none;" class="btn">发送验证码<a>
+			<div class="xieyi">
+				<div class="select"></div>
+				<a href="用户使用协议.html" style="text-decoration: none;" class="tyXieyi">我同意用户使用协议</a>
+			</div>
+		</div>
+		<!--<script type="text/javascript">
+			var btn = document.querySelector('.btn')
+			var falseDiv = document.createAttribute('div')
+			btn.addEventListener('click',function(){
+//				console.log('123')
+				falseDiv.innerHTML = `
+					<div class="false1"></div>
+					<div class="false2"></div>
+				`
+//				falseDiv.style = `
+//					.false1,.false2{
+//						width: .6rem;
+//						height: .5rem;
+//						background-size: 100% 100%;
+//						position: absolute;
+//						right: .7rem;
+//					}
+//					.false1,.false2{
+//						background-image: url(../img/false.png);
+//					}
+//					.false1{
+//						top: .6rem;
+//					}
+//					.false2{
+//						top: 1.9rem;
+//					}				
+//				`
+			})
+		</script>-->
+		
+		<script type="text/javascript">
+			var select = document.querySelector('.select')
+			select.onclick = function(){
+				console.log('123')
+				if(select.style.backgroundColor == ''){
+					select.style.backgroundColor = '#b22329'
+				}else{
+					select.style.backgroundColor = ''
+				}
+			}
+		</script>
+	</body>
+</html>

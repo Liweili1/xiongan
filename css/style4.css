@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.topImg{
+	background-image: url(../img/topImg.png);
+	background-size: 100% 100%;
+	width: 10rem;
+	height: 0.5rem;
+}
+.headerTitle{
+	width: 10rem;
+	height: 1.2rem;
+	font-size: .5rem;
+	text-align: center;
+	line-height: 1.2rem;
+	color: #393939;
+	background-color: #fafafa;
+}
+
+
+.header{
+	width: 10rem;
+	height: 4.5rem;
+	background-color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.touxiang{
+	width: 2rem;
+	height: 2rem;
+	background-image: url(../img/gr-touxiang.png);
+	background-size: 100% 100%;
+	margin-top: 1rem;
+}
+
+.header .infor{
+	width: 2.5rem;
+	font-size: .5rem;
+	color: #565656;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: .6rem;
+}
+
+/*信息列表*/
+.inforList{
+	margin-top: .5rem;
+	width: 10rem;
+	height: 8rem;
+	background-color: #fff;
+	 /*给一些外边距,使其底部内容不会被遮掉*/
+	margin-bottom: 4rem;
+}
+.inforItem{
+	width: 10rem;
+	height: 1rem;
+	background-color: #f7f7f7;
+	font-size: .4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: .1rem;
+	padding: .2rem .4rem;
+}
+.inforItem .left{
+	color: #565656;
+}
+.inforItem .right{
+	color: #565656;
+}
+.inforList .button{
+	width: 10rem;
+	height: 1rem;
+	font-size: .4rem;
+	text-align: center;
+	line-height: 1rem;
+	background-color: #f7f7f7;
+	margin-top: 1rem;
+}
+
+
+
+
+/*底部导航*/
+.footer{
+	width: 10rem;
+	height: 1rem;
+	background-color: #f7f7f7;
+	box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(44, 44, 44, 0.38);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+a{
+	text-decoration:none;
+}
+.footer .itemIcon{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .itemIcon .icon{
+	width: 0.3rem;
+	height: 0.3rem;
+	background-size: 100% 100%;
+	margin-bottom: 0.1rem;
+}
+
+.footer .itemIcon:nth-child(1) .icon{
+	background-image: url(../img/icon-shouye.gif);
+}
+
+.footer .itemIcon:nth-child(2) .icon{
+	background-image: url(../img/icon-gzll.gif);
+}
+
+.footer .itemIcon:nth-child(3) .icon{
+	background-image: url(../img/icon-ygpj.gif);
+}
+
+.footer .itemIcon:nth-child(4) .icon{
+	background-image: url(../img/icon-wo0.gif);
+}
+/*我的选择图像*/
+/*.footer .itemIcon:nth-child(4):hover{
+	background-image: url(../img/icon-wo.gif);
+}*/
+.footer .itemIcon:nth-child(4) .text{
+	color: #b22329;
+}
+.footer .itemIcon .text{
+	height: 0.3rem;
+	font-family: MicrosoftYaHei;
+	font-size: 0.2rem;
+	color: #6e6e6e;
+}

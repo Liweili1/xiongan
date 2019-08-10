@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style3.css" />
+	<script src="js/lcRem.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.mainTop {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 10rem;
+			height: 18rem;
+			/*opacity: 0.59;*/
+			z-index: 1000;
+			display: none;
+			background-color: rgb(150, 150, 150, 0.59);
+		}
+
+		.hujiao {
+			width: 7rem;
+			height: 2rem;
+			background-image: url(img/ygpj-hj.png);
+			background-size: 100% 100%;
+			position: absolute;
+			top: 8rem;
+			left: calc(50% - 3.5rem);
+			background-color: #f8f8f8;
+			border-radius: .3rem;
+		}
+
+		.tel {
+			font-size: .6rem;
+			line-height: 1rem;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<!--顶部导航栏-->
+	<!--<div class="topImg"></div>-->
+	<div class="headerTitle">我要评价</div>
+
+	<!--三个导航-->
+	<div class="navList">
+		<div class="navItem item1">收到的评价</div>
+		<div class="navItem item2">我发起的评价</div>
+		<div class="navItem item3">法律维权</div>
+	</div>
+	<div class="main">
+		<div class="page page1">
+			<!--评价列表-->
+			<div class="commentList">
+				<div class="commentItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">干活不认真</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right"><img src="img/bq-brz.png" /></div>
+					</div>
+					<div class="date">2017-10-11</div>
+				</div>
+				<div class="commentItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">私生活不检点</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right"><img src="img/bq-brz.png" /></div>
+					</div>
+					<div class="date">2017-10-11</div>
+				</div>
+				<div class="commentItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">态度棒棒的</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right"><img src="img/bq-bbd.png" /></div>
+					</div>
+					<div class="date">2017-10-11</div>
+				</div>
+				<div class="commentItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">态度还不错</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right"><img src="img/bq-hbc.png" /></div>
+					</div>
+					<div class="date">2017-10-11</div>
+				</div>
+			</div>
+			<!--图标固定定位-->
+			<div class="button">
+				<div class="jia"></div>
+			</div>
+		</div>
+		<div class="page page2">
+			<!--我发起的评价-->
+			<div class="startComList">
+				<div class="startComItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">饭不好吃</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right">
+							<img src="img/zanting.png" />
+						</div>
+					</div>
+					<div class="picInfor">
+						<div class="pic1"></div>
+						<div class="pic2"></div>
+					</div>
+					<div class="date">2018-4-20 17：10</div>
+				</div>
+				<div class="startComItem">
+					<div class="top">
+						<div class="left">
+							<div class="content">今天的饭菜很好吃</div>
+							<div class="minText">广东建粤工程有限公司</div>
+						</div>
+						<div class="right">
+							<img src="img/bofang.png" />
+						</div>
+					</div>
+					<div class="picInfor">
+						<div class="pic1"></div>
+						<div class="pic2"></div>
+					</div>
+					<div class="date">2018-4-20 17：10</div>
+				</div>
+			</div>
+			<!--图标固定定位-->
+			<div class="button">
+				<div class="tianjia"></div>
+			</div>
+		</div>
+		<div class="page page3">
+			<!--法律维权-->
+			<div class="lawList">
+				<div class="law">
+					<div class="content">&nbsp;&nbsp;&nbsp;&nbsp;如果您需要帮助如拖欠工资款,工伤赔付,安全保险...请联系我们,我们会为您竭尽全力!!!</div>
+					<div class="btn-yjzx"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--法律维权点击“一键咨询”后的页面-->
+	<div class="mainTop">
+		<div class="hujiao">
+			<div class="tel">400 830 8339</div>
+		</div>
+	</div>
+
+	<!--底部导航栏-->
+	<div class="footer">
+		<a class="itemIcon" href="首页.html">
+			<div class="icon"></div>
+			<div class="text">首页</div>
+		</a>
+		<a class="itemIcon" href="工作履历.html">
+			<div class="icon"></div>
+			<div class="text">工作履历</div>
+		</a>
+		<a class="itemIcon" href="用工评价.html">
+			<div class="icon"></div>
+			<div class="text">用工评价</div>
+		</a>
+		<a class="itemIcon" href="我的.html">
+			<div class="icon"></div>
+			<div class="text">我的</div>
+		</a>
+	</div>
+
+	<!--三个导航按钮的切换监听事件-->
+	<script type="text/javascript">
+		var item1 = document.querySelector('.item1')
+		var item2 = document.querySelector('.item2')
+		var item3 = document.querySelector('.item3')
+		var page1 = document.querySelector('.page1')
+		var page2 = document.querySelector('.page2')
+		var page3 = document.querySelector('.page3')
+
+		item1.addEventListener('click', function () {
+			page1.style.zIndex = '10';
+			page2.style.zIndex = '1';
+			page3.style.zIndex = '1'
+
+			item1.style.borderBottom = '.05rem solid #b22329';
+			item2.style.borderBottom = '';
+			item3.style.borderBottom = ''
+
+		})
+		item2.addEventListener('click', function () {
+			page2.style.zIndex = '10';
+			page1.style.zIndex = '1';
+			page3.style.zIndex = '1';
+
+			item2.style.borderBottom = '.05rem solid #b22329';
+			item1.style.borderBottom = '';
+			item3.style.borderBottom = '';
+		})
+		item3.addEventListener('click', function () {
+			page3.style.zIndex = '10';
+			page1.style.zIndex = '1';
+			page2.style.zIndex = '1';
+
+			item3.style.borderBottom = '.05rem solid #b22329';
+			item1.style.borderBottom = '';
+			item2.style.borderBottom = ''
+		})
+	</script>
+
+	<script type="text/javascript">
+		var hjBtn = document.querySelector('.btn-yjzx')
+		var mainTop = document.querySelector('.mainTop')
+
+		hjBtn.addEventListener('click', function () {
+			mainTop.style.display = 'block'
+		})
+		mainTop.addEventListener('click', function () {
+			//				if(!=hjBtn){
+			mainTop.style.display = 'none'
+			//				}
+
+		})
+	</script>
+</body>
+
+</html>
