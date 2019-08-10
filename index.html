@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+		<script src="js/lcRem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<!--顶部导航栏-->
+		<!--<div class="topImg"></div>-->
+		<div class="headerTitle">
+			<div class="title">首页</div>
+			<a href="通知公告.html" style="text-decoration: none;" class="tongzhi">
+				<img class="tzImg" src="img/sy-tongzhi.png"/>
+				<div class="tzText">通知</div>
+			</a>
+		</div>
+		
+		<!--轮播图-->
+		<!--<div class="lunboList">
+			<img src="img/sy-lunbo.png" style="background-size: 100% 100%;"/>
+		</div>-->
+		<div class="swiper">
+			<div class="imgList">
+				<div class="imgItem active" data-index="0" style="background-image: url(img/sy-lunbo.png);"></div>
+				<div class="imgItem" data-index="1" style="background-image: url(img/img2.jpg);"></div>
+				<div class="imgItem" data-index="2" style="background-image: url(img/img3.jpg);"></div>
+				<div class="imgItem" data-index="3" style="background-image: url(img/img4.jpg);"></div>
+				<div class="imgItem" data-index="4" style="background-image: url(img/img5.jpg);"></div>
+			</div>
+			<div class="swiperBtn">
+				<div class="leftBtn"></div>
+				<div class="rightBtn"></div>
+			</div>
+			<div class="circleList">
+				<div data-index="0" class="circle"></div>
+				<div data-index="1" class="circle"></div>
+				<div data-index="2" class="circle"></div>
+				<div data-index="3" class="circle"></div>
+				<div data-index="4" class="circle"></div>
+			</div>
+		</div>
+		
+		
+		<!--头条-->
+		<div class="toutiao">
+			<div class="ttList">
+				<div class="ttItem1">头条：珠海今日港珠澳大桥通车，农民工兄弟有福了</div>
+				<div class="ttItem2">头条：珠海今日港珠澳大桥通车，农民工兄弟有福了</div>
+			</div>
+			
+		</div>
+		<!--列表-->
+		<div class="syList">
+			<div class="aqItem">
+				<div class="top">
+					<div class="left">
+						<div class="icon icon1"></div>
+						<div class="title">安全教育培训</div>
+					</div>
+					<div class="right"></div>
+				</div>
+				<div class="minText">请积极参与安全教育培训哦，答题赢大奖！</div>
+			</div>
+			<!-- 我的工资 -->
+			<div class="gzItem">
+				<div class="top">
+					<div class="left">
+						<div class="icon icon2"></div>
+						<div class="title">我的工资</div>
+					</div>
+					<div class="gengduo">更多</div>
+					<div class="right"></div>
+				</div>
+				<div class="slider">
+					<div class="arrow larrow"></div>
+					<div class="sliderItem sliderItem1"></div>
+					<div class="sliderItem sliderItem2"></div>
+					<div class="sliderItem sliderItem3"></div>
+					<div class="arrow rarrow"></div>
+				</div>
+				
+				  
+				  
+			</div>   
+			<div class="kqItem">
+				<div class="top">
+					<div class="left">
+						<div class="icon icon3"></div>
+						<div class="title">我的考勤</div>
+					</div>
+				</div>
+				<div class="minText">5月份出勤天数：20天</div>
+				<div class="kqDate">
+					<div class="kqTop">
+						<div class="kqArrow kqLeft"></div>
+						<span>2018年5月</span>
+						<div class="kqArrow kqRight"></div>
+					</div>
+					<div class="kqrl">
+						<div class="rlk"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		
+		<!--底部导航栏-->
+		<div class="footer">
+			<a class="itemIcon" href="index.html">
+				<div class="icon"></div>
+				<div class="text">首页</div>
+			</a>
+			<a class="itemIcon" href="工作履历.html">
+				<div class="icon"></div>
+				<div class="text">工作履历</div>
+			</a>
+			<a class="itemIcon" href="用工评价.html">
+				<div class="icon"></div>
+				<div class="text">用工评价</div>
+			</a>
+			<a class="itemIcon" href="我的.html">
+				<div class="icon"></div>
+				<div class="text">我的</div>
+			</a>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var currentPage = 0;
+			var imgList = document.querySelectorAll('.imgItem');
+			var circleList = document.querySelectorAll('.circle');
+			console.log(imgList)
+			var leftBtn = document.querySelector('.leftBtn');
+			var rightBtn = document.querySelector('.rightBtn')
+			
+//			左箭头
+			leftBtn.onclick = function(){
+				currentPage --;
+				if(currentPage<0){
+					currentPage = imgList.length - 1;
+				}
+				
+				imgList.forEach(function(item,index){
+					if(item.dataset.index == currentPage){
+						item.className = "imgItem active";
+						circleList[index].className = "active";
+					}else{
+						item.className = "imgItem";
+						circleList[index].className = "circle";
+					}
+					
+				})
+			}
+//			右箭头
+			rightBtn.onclick = function(){
+				currentPage ++;
+				if(currentPage == imgList.length){
+					currentPage = 0;
+				}
+				
+				imgList.forEach(function(item,index){
+					if(item.dataset.index == currentPage){
+						item.className = "imgItem active";
+						circleList[index].className = "active";
+					}else{
+						item.className = "imgItem";
+						circleList[index].className = "circle";
+					}
+					
+				})
+			}
+//			点击小圆圈事件
+			var circleListDiv = document.querySelector(".circleList")
+			circleListDiv.onclick = function(event){
+				if(event.target.className != "circleList"){
+				console.log(event)	
+					currentPage = event.target.dataset.index;
+					imgList.forEach(function(item,index){
+						if(item.dataset.index == currentPage){
+							item.className = "imgItem active";
+							circleList[index].className = "active"
+						}else{
+							item.className = "imgItem"
+							circleList[index].className = "circle"
+						}
+						
+					})
+				}
+			}
+		</script>
+	</body>
+</html>
