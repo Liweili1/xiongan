@@ -133,6 +133,7 @@
 			var currentPage = 0;
 			var imgList = document.querySelectorAll('.imgItem');
 			var circleList = document.querySelectorAll('.circle');
+			var circleFirst = document.querySelector('.circle :first-child')
 			console.log(imgList)
 			var leftBtn = document.querySelector('.leftBtn');
 			var rightBtn = document.querySelector('.rightBtn')
@@ -176,6 +177,7 @@
 //			点击小圆圈事件
 			var circleListDiv = document.querySelector(".circleList")
 			circleListDiv.onclick = function(event){
+//				circleFirst.style.display = "none";
 				if(event.target.className != "circleList"){
 				console.log(event)	
 					currentPage = event.target.dataset.index;

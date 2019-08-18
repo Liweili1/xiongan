@@ -115,7 +115,9 @@ body{
 	border-radius: .1rem;
 	margin: 0 .1rem;
 }
+/*.circleList .circle:first-child,*/
 .circleList .active{
+	border: none;
 	width: .12rem;
 	height: .25em;
 	margin: 0 .1rem;
